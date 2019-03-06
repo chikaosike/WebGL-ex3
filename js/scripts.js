@@ -1,5 +1,5 @@
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera( 30, window.innerWidth/window.innerHeight, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -15,10 +15,10 @@ scene.add( icosahedron );
 icosahedron.rotation.x = 0.1;
 icosahedron.rotation.y = -0.25;
 
-camera.position.z = 100;
+camera.position.z = 150;
 
 var light = new THREE.PointLight( 0xFFFF00 );
-light.position.set( 10, 0, 25 );
+light.position.set( 10, 0, 15 );
 scene.add( light );
 
 
